@@ -34,8 +34,7 @@ def generate_launch_description():
     gait_config = os.path.join(config_pkg_share, "config/gait/gait.yaml")
     links_config = os.path.join(config_pkg_share, "config/links/links.yaml")
     default_model_path = os.path.join(descr_pkg_share, "xacro/robot_mid360.xacro")
-    default_world_path = os.path.join(config_pkg_share, "worlds/IscasMuseumAppended.world")
-
+    default_world_path = os.path.join(config_pkg_share, "worlds/simple_environment.world")
 
     declare_use_sim_time = DeclareLaunchArgument(
         "use_sim_time",
@@ -64,10 +63,10 @@ def generate_launch_description():
         "gui", default_value="true", description="Use gui"
     )
     declare_world_init_x = DeclareLaunchArgument("world_init_x", default_value="0.0")
-    declare_world_init_y = DeclareLaunchArgument("world_init_y", default_value="0.0")
+    declare_world_init_y = DeclareLaunchArgument("world_init_y", default_value="-3.0")
     declare_world_init_z = DeclareLaunchArgument("world_init_z", default_value="0.275")
     declare_world_init_heading = DeclareLaunchArgument(
-        "world_init_heading", default_value="0.0"
+        "world_init_heading", default_value="1.57"
     )
 
     
