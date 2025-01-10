@@ -160,6 +160,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Acknowledgements
 
+This repo was originally cloned from: https://github.com/anujjain-dev/unitree-go2-ros2
+
 This project builds upon and incorporates work from the following projects:
 
 * [Unitree Robotics](https://github.com/unitreerobotics/unitree_ros) - For the Go2 robot description (URDF model).
